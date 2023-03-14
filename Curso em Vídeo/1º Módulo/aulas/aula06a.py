@@ -1,0 +1,5 @@
+num1 = int(input('Pirmeiro número: '))
+num2 = int(input('Segundo número: '))
+print(type(num1))
+print(type(num2))
+print('A soma de {} e {} vale {}'.format(num1, num2, num1 + num2))

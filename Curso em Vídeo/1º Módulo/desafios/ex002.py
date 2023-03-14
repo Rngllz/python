@@ -1,0 +1,5 @@
+nome = input('Seu nome:')
+print('Olá, bem vindo', nome)
+print('Espero que você esteja tendo um ótimo dia!')
+print('Foi um prazer te conhecer', nome)
+print('Adeus!')
