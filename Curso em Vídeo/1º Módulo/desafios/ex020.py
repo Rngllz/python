@@ -1,8 +1,17 @@
-from random import sample
+from random import sample, shuffle
 
-alun = ['A','B','C','D']
+nomes = ['','','','']
+cont = 0
 
+for i in range(0,4):
+    nomes[i] = input('{}º Nome: '.format(i+1))
 
-for i in range(0,3):
-    alun[sample(range(0,3),3)] = input('Nome: ')
-    print(alun[i])
+print(22*'-')
+
+for i in sample(range(0,4),4):
+    cont += 1
+    print('{}º a apresentar é o {}'.format(cont, nomes[i]))
+
+shuffle(nomes)
+print('A ordem de apresentação será: {}'.format(nomes))
+
