@@ -6,4 +6,4 @@ if num1 > num2:
 elif num2 > num1:
     print('O segundo número, {}, é maior que o primeiro, {}.'.format(num2,num1))
 else:
-    print('Os números possuem os mesmos valores.')
+    print('Os números possuem o mesmo valor.')
