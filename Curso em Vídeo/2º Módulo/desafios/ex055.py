@@ -11,4 +11,5 @@ for c in range(1,6,1):
     if peso < menor:
         menor = peso
 
+
 print("\n\033[31mO maior peso lido é de {}.kg\n\033[32mO menor peso lido é de {}kg.\033[m".format(maior,menor))
