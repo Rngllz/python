@@ -1,7 +1,6 @@
-pt = float(input("Primeiro termo: "))
-rz = float(input("Razão: "))
-
-print(pt,". ",end='')
-for c in range(1,11,1):
-    pt += rz
-    print(pt,". ",end='')
+pt = int(input("Primeiro termo: "))
+rz = int(input("Razão: "))
+decimo = pt + (10 - 1) * rz
+for c in range(pt,decimo + rz,rz):
+    print(c,end=' . ')
+print("FIM")
