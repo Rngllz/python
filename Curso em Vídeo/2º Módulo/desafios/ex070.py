@@ -8,14 +8,19 @@ while True:
     total += preço
     if preço > 1000:
         mil += 1
-    if c == 1:
+  # if c == 1:
+  #     p_barato = preço
+  #     n_barato = nome
+  # else:
+  #     if preço < p_barato:
+  #         p_barato = preço
+  #         n_barato = nome
+    if c == 1 or preço < p_barato:
         p_barato = preço
-        n_barato = nome
-    else:
-        if preço < p_barato:
-            p_barato = preço
-            n_barato = nome
-    r = str(input('\033[m\nContinuar [S/N]: \033[32m')).strip().upper()[0]
+        n_barato = nome 
+    r = ' '
+    while r not in 'SN':
+        r = str(input('\033[m\nContinuar [S/N]: \033[32m')).strip().upper()[0]
     print('\033[33m+'*30)
     if r == 'N':
         break
