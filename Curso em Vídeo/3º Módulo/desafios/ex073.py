@@ -1,0 +1,12 @@
+times = ('Flamengo','Santos','Palmeiras','Grêmio','Athletico Paranaense','São Paulo','Internacional','Corinthians','Fortaleza','Goiás','Bahia','Vasco da Gama','Atlético','Fluminense','Botafogo','Ceará','Cruzeiro','Csa','Chapecoense','Avaí')
+
+print('\n'+'\033[32m='*70)
+print(f'\033[33mOs cinso primeiros colocados são: \033[m{times[:5]}.')
+print('\033[32m='*70)
+print(f'\033[33mOs quatro últimos colocados são: \033[m{times[16:]}.')
+print('\033[32m='*70)
+print(f'\033[33mOs times em ordem alfabética: \033[m{sorted(times)}.')
+print('\033[32m='*70)
+print('\033[33mA Chapecoense se encontra na {}ª posição.'.format((times.index('Chapecoense')+1)))
+print('\033[32m='*70)
+print('\033[m')
