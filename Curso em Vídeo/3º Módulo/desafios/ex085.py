@@ -8,4 +8,4 @@ for c in range(1,8):
         valores[1].append(temp)
 valores[0].sort()
 valores[1].sort()
-print(f'\nPares: {valores[0]}\nÍmpares: {valores[1]}')
+print(f'\nPares: {valores[0]}\nÍmpares: {valores[1]}\n')

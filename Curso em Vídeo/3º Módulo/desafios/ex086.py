@@ -1,11 +1,12 @@
-matriz = [[[],[],[]],[[],[],[]],[[],[],[]]]
+#matriz = [[[],[],[]],[[],[],[]],[[],[],[]]]
+matriz = [[0,0,0],[0,0,0],[0,0,0]]
+ 
 
 #linha
 for l in range(0,3):
     #coluna
     for c in range(0,3):
         matriz[l][c] = int(input(f'Digite um valor [{l},{c}]: '))
-
 
 for l in range(0,3):
     for c in range(0,3):
