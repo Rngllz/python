@@ -11,6 +11,4 @@ for c in range(1,8,1):
     else:
         p += 1
 
-print('''\nMaiores de idade: {}
-Menores de idade: {}
-'''.format(g,p))
+print('\nMaiores de idade: {}\nMenores de idade: {}'.format(g,p))
