@@ -14,8 +14,7 @@ for l in range(0,3):
     print('\n')
 
 print(f'A soma de todos os valores pares é: {pares}')
-print(f'A soma de todos os valores da terceira coluna é:',end=' ')
 for l in range(0,3):
     t_c += matriz[l][2]
-print(t_c)
+print(f'A soma de todos os valores da terceira coluna é: {t_c}')
 print(f'O maior valor da segunda linha é: {max(matriz[1])}\n')
