@@ -11,7 +11,7 @@ for c in range(0,partidas):
      gol.append(int(input(f' - Quantos gols foram marcados na {c+1}ª partida? ')))
 print()
 
-jogador['gols'] = gol
+jogador['gols'] = gol[:]
 jogador['total'] = sum(gol)
 
 print('-=-'*15)
