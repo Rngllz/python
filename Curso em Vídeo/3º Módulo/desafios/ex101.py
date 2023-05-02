@@ -1,23 +1,21 @@
-from datetime import datetime
-anoAtual = datetime.now().year
-
 
 def voto(ano):
+    from datetime import datetime
+    anoAtual = datetime.now().year
     """
     -> Verifica se a pessoa pode votar ou não
     :param ano: Anos de nascimento da pessoa
     :return: Se a pessoa é obrigada a votar, opcional ou negada.
     """
     idade = anoAtual - ano
-    print(f'   .Com {idade} anos:',end=' ')
     if idade < 16:
-        print('NEGADO')
+        return f'   .Com {idade} anos: NEGADO'
     elif (18 > idade >= 16) or ( idade > 65):
-        print('OPCIONAL')
+        return f'   .Com {idade} anos: OPCIONAL'
     else:
-        print('OBRIGATÓRIO')
+        return f'   .Com {idade} anos: OBRIGATÓRIO'
 
+print()
 anoNasc = int(input('   .Informe seu ano de nascimento: '))
-voto(anoNasc)
-
-help(voto)
+print(voto(anoNasc))
+print()

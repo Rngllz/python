@@ -1,19 +1,20 @@
 
 def notas(*lst,sit=False):
+    """
+    -> Função para analisar notas e situações de vários alunos
+    Args:
+        sit (bool, optional): Define se será mostrado ou não a situação do aluno. Defaults to False.
+        lst (int): Recebe todas as notas dos alunos, em formatdo de tupla
+    Returns:
+        [dict]: Retorna um dicionário com o total de alunos, a maior e menor nota, a média da turma.
+    """
     turma = dict()
-    maior = lst[0]
-    menor = lst[0]
-    for c in lst:
-        if c > maior:
-            maior = c
-        if c < menor:
-            menor = c
     turma['total'] = len(lst)
-    turma['maior'] = maior
-    turma['menor'] = menor
+    turma['maior'] = max(lst)
+    turma['menor'] = min(lst)
     turma['média'] = sum(lst) / len(lst)
 
-    if sit == True:
+    if sit:
         if turma['média'] < 6:
             turma['situação'] = 'RUIM'
         elif turma['média'] == 6:
@@ -24,5 +25,5 @@ def notas(*lst,sit=False):
     return turma
 
 
-resp = notas(6,6,6,sit=True)
+resp = notas(5.5,2.5,8.5,sit=True)
 print(resp)
