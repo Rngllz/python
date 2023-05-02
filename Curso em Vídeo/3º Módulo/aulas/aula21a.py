@@ -58,6 +58,7 @@ print(f'No programa principal, o n vale {n}')
 
 
 def funcao():
+    global n1
     n1 = 4 # Esse n1 foi criado como local
            # A única forma de usar uma váriavel global
            # é escrevendo o código 'global n1'
