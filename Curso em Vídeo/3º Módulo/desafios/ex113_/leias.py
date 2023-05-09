@@ -18,7 +18,7 @@ def leiaReal(msg):
             if n == '':
                 n = 0
                 print('\033[31mUsuário preferiu não digitar esse número.\033[m')
-            i = int(n)
+            i = float(n)
         except:
             print('\033[31mERRO: por favor, digite um número real válido.\033[m')
         else:

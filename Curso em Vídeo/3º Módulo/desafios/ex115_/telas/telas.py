@@ -55,4 +55,24 @@ def pessoas_cadastradas():
     for pessoa in info:
         teste = pessoa.split('-')
         print(f'      .{teste[0]}\t\t{teste[1]}',end='')
-        #print(f'{nome}\t{idade} anos')
+
+
+'''
+        OUTRA FORMA DE MANIPULAR ARQUIVOS DE TEXTO
+
+
+        a = open(arquivo.txt, 'wt+')
+                               write text (+ é caso o arquivo ainda não exista)    
+
+        a = open(arquivo.txt, 'rt')
+                               read text
+
+        a = open(arquivo.txt, 'at')
+                               append text
+
+        a.read()
+        a.readlines()
+        a.close()
+        a.write('askdalskd')
+
+'''

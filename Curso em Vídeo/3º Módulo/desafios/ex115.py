@@ -10,6 +10,6 @@ while True:
         telas.pessoas_cadastradas()
     elif opc == 2:
         telas.novo_cadastro()
-    else:
-        print('       \033[31mX Encerrando o sistema... X\033[m')
+    elif opc == 3:
+        print('     \033[31mX Encerrando o sistema... X\033[m')
         break
