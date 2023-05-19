@@ -26,5 +26,6 @@ base_credit = pd.read_csv('csv\credit_data.csv')
 #plt.hist(x = base_credit['loan'])
 #plt.show()
 
-grafico = px.scatter_matrix(base_credit, dimensions=['age'])
+grafico = px.scatter_matrix(base_credit, dimensions=['age','income','loan'],color = 'default')
+#                                                                           os pontos são coloridos de acordo se a pessoa pagou ou não
 grafico.show()
